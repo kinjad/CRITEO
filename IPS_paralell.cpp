@@ -216,7 +216,7 @@ int main(int argc, char** argv){
 		for (int i = 0; i < NUM_THREADS; i++) {
 		  threads[i].join();    
 		}
-		//test_thread.join();
+		test_thread.join();
 
 		for (int i = 0; i < NUM_THREADS; i++) {
 		  x_train_total += x_train[i];
@@ -235,7 +235,7 @@ int main(int argc, char** argv){
 		  g[k] /= (double)hN_train;
 		x_train_total /= (double)hN_train;
 
-		test_thread.join();
+		//test_thread.join();
 		x_test /= (double)hN_test;
 
 		/*
