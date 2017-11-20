@@ -199,7 +199,7 @@ int main(int argc, char** argv){
 		vector<vector<double> > gs(NUM_THREADS, vector<double>(74000, 0));		
 
 
-		//test_thread = thread(computeGradient, w, ref(x_test), ref(g), ref(data_idx), ref(data_val), ref(data_reward), ref(data_ips), total_num/3*2, total_num, ref(hN_test));
+		test_thread = thread(computeGradient, w, ref(x_test), ref(g), ref(data_idx), ref(data_val), ref(data_reward), ref(data_ips), total_num/3*2, total_num, ref(hN_test));
 
 	    
 		//		computeGradient(w, x_test, g, data_idx, data_val, data_reward, data_ips, total_num/3*2, total_num, hN_test);
